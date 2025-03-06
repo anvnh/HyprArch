@@ -1,4 +1,7 @@
 
+![Logo](https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/header.svg)
+
+
 # HyprArch 
 
 The installation script is designed for a minimal Arch Linux install, but may work on some Arch-based distros. 
