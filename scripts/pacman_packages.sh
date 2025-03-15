@@ -9,13 +9,18 @@ pacman_packages=(
     grim slurp # For screenshot on hyprland
     rofi 
     imv # Image viewer for rofi
+    w3m # For ranger preview image
+    mpv # For ranger preview video
     pango
     ueberzugpp
+    imagemagick # For ranger preview image
+    appimaged # Daemon that monitors and integrates AppImage applications with the system
     # ------------------------------------------------------ #
     # For hyprland
     parallel
     pamixer
     # ------------------------------------------------------ #
+    jq
 )
 
 # Update the system and install the packages
