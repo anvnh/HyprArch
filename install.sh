@@ -43,6 +43,10 @@ print_message "38" "Setting up hyde..."
 print_message "38" "Setting up rofi..."
 . ./scripts/configs/rofi.sh
 
+# NOTE: Waybar
+print_message "38" "Setting up waybar..."
+. ./scripts/configs/waybar.sh
+
 cat <<EOF
 
 ===========================================
