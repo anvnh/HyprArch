@@ -7,7 +7,7 @@ source ./scripts/message.sh
 pacman_packages=(
     dunst # For notitication on hyprland
     grim slurp # For screenshot on hyprland
-    rofi 
+    rofi
     imv # Image viewer for rofi
     w3m # For ranger preview image
     mpv # For ranger preview video

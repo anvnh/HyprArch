@@ -8,6 +8,7 @@ source ./scripts/message.sh
 
 # Disable root before installing AUR packages
 yay_packages=(
+    grimshot # For taking screenshots
     swaylock-effects # For hyprland lockscreen
 )
 echo "Installing aur packages..."

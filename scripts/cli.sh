@@ -32,8 +32,8 @@ echo 'export BAT_THEME="Catppuccin Mocha"' >> ~/.zshrc
 
 #  _____ __  __ _   ___  __
 # |_   _|  \/  | | | \ \/ /
-#   | | | |\/| | | | |\  / 
-#   | | | |  | | |_| |/  \ 
+#   | | | |\/| | | | |\  /
+#   | | | |  | | |_| |/  \
 #   |_| |_|  |_|\___//_/\_\
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir -p ~/.config/tmux

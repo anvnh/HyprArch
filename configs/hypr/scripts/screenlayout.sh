@@ -20,7 +20,7 @@ i_override="$(gsettings get org.gnome.desktop.interface icon-theme | sed "s/'//g
 i_override="configuration {icon-theme: \"${i_override}\";}"
 
 #// Screen layout selection
-CHOICE=$(echo -e "<b>Mirror Screen</b>\n<b>Extend to left</b>\n<b>Extend to right</b>\n<b>Extend to top</b>\n<b>Extend to bottom</b>\n \n\n<span size='large'><b>Press ESC to exit</b></span>" | \
+CHOICE=$(echo -e "Mirror Screen\nExtend to left\nExtend to right\nExtend to top\nExtend to bottom\n \n\n<span size='large'><b>Press ESC to exit</b></span>" | \
     rofi -dmenu -markup-rows -p "Select screen layout" \
     -theme-str "${r_scale}" -theme-str "${r_override}" -theme-str "${i_override}" -config "${roconf}")
 
@@ -31,13 +31,13 @@ case "$CHOICE" in
         hyprctl keyword monitor "HDMI-A-1,1920x1080@60,0x0,1"
         hyprctl keyword monitor "eDP-1,1920x1080@60,0x0,1"
         ;;
+    "Extend to right")
+        hyprctl keyword monitor "HDMI-A-1,1920x1080@60,1920x0,1"
+        hyprctl keyword monitor "eDP-1,1920x1080@60,0,1"
+        ;;
     "Extend to left")
         hyprctl keyword monitor "HDMI-A-1,1920x1080@60,0x0,1"
         hyprctl keyword monitor "eDP-1,1920x1080@60,1920x0,1"
-        ;;
-    "Extend to right")
-        hyprctl keyword monitor "HDMI-A-1,1920x1080@60,0x0,1"
-        hyprctl keyword monitor "eDP-1,1920x1080@60,3840x0,1"
         ;;
     "Extend to top")
         hyprctl keyword monitor "HDMI-A-1,1920x1080@60,0x0,1"
